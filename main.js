@@ -1,8 +1,58 @@
-function person(name, age, color) {
+var d = new Date();
+document.write(d + '<br>');
+var hours = d.getHours();
+
+/* function myAlert() {
+    alert("Hi");
+}
+setInterval(myAlert, 3000);
+ */
+
+ var n = prompt("Enter a number", "")
+var answer = Math.sqrt(n);
+alert("The square root of " + n + " is " + answer);
+
+document.write(Math.PI + '<br>');
+document.write(Math.LN2 + '<br>');
+document.write(Math.LN10 + '<br>');
+document.write(Math.E + '<br>');
+
+var person = [];
+person["name"] = "John";
+person["age"] = 46;
+
+var c1 = ["HTML", "CSS"];
+var c2 = ["JS", "C++"];
+var courses = c1.concat(c2);
+
+var courses = new Array(3);
+courses[0] = "HTML"
+
+var course = new Array()
+courses[0] = 'HTML'
+
+var courses = ['HTML', 'CSS']
+
+var courses = new Array("HTTP", "CSS", "JS");
+
+simba = {category: "lion", gender: "male"}
+
+function human(name, age, color) {
     this.name = name;
     this.age = age;
     this.favColor = color;
+    this.changeName = function (name) {
+        this.name = name;
+    }
+    this.yearOfBirth = bornYear;
 }
+
+function bornYear() {
+    return 2019 - this.age;
+}
+
+var p1 = new human("John", 43, "green");
+var p2 = new human("Amy", 21, "red");
 
 var person = {
     name: "John", age: 31,
