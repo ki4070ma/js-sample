@@ -1,3 +1,18 @@
+function person(name, age, color) {
+    this.name = name;
+    this.age = age;
+    this.favColor = color;
+}
+
+var person = {
+    name: "John", age: 31,
+    favColor: "green", height: 183
+};
+
+var x = person.age;
+var y = person['age'];
+var z = person.name.length;
+
 var result = confirm("Do you really want to leave this page?");
 if (result == true){
   alert("Thank you for visiting.");
