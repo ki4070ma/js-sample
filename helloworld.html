@@ -9,6 +9,43 @@
   </script>
    <body>
      <script>
+      var i = 0;
+      do {
+        document.write('do while: ' + i + '<br>');
+        i++;
+      } while(i<=5);
+
+      var i = 0;
+      while (i<=5) {
+        document.write('while: ' + i + '<br>');
+        i++;
+      }
+
+      for (i=0; i<=5; i++) {
+        document.write('for: ' + i + "<br>");
+      }
+
+      a = 1;
+      switch (a) {
+        case 1:
+          document.write('1<br>');
+          break;
+        case 2:
+          document.write('2<br>');
+          break;
+        default:
+          document.write('other<br>');
+      }
+      var myNum1 = 10;
+      var myNum2 = 10;
+      if (myNum1 < myNum2) {
+        alert("JavaScript is not easy to learn.");
+      } else if (myNum1 == myNum2) {
+        alert("JavaScripttttttttt");
+      } else {
+        alert("JavaScript is easy to learn.");
+      }
+
       // This is a single line comment
       document.write("<h1>Hello World!</h1>");
       var x = 100;
